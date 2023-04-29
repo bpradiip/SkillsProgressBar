@@ -1,0 +1,193 @@
+/*************  My Skills Section CSS ************/
+
+.MySkills{
+  margin:0;
+  font-family: 'Montserrat', serif;
+  box-sizing: border-box;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background: white;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.container
+{
+  position: relative;
+  width: 500PX;
+}
+
+.container h2{
+  color: black;
+  text-align: center;
+  font-size: 35px;
+  margin: 20px 0 40px;
+
+  background: -webkit-linear-gradient(45deg, #f7797d, #FBD786, #24FE41);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.container .skills{
+  position: relative;
+  display: flex;
+  margin: 20px 20px;
+  padding: 24px 10px 18px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid #f08080;
+  transition: 0.5s;
+  filter: drop-shadow(0 0 12px rgba(244, 154, 141, 0.32));
+}
+
+.container .skills:before{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%
+  background: rgba(255,255,255,.1);
+  z-index: 10;
+}
+
+.name{
+  position: relative;
+  width: 110px;
+  text-align: right;
+  color: black;
+  text-transform: uppercase;
+}
+
+.value{
+  position: relative;
+  width: 110;
+  text-align: right;
+  color: black;
+  text-transform: uppercase;
+}
+
+.percent{
+  position: relative;
+  width: calc(100% - 150px);
+  height: 20px;
+  margin: 0 10px 3px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: inset 0 0 10px #F8B59B;
+  overflow: hidden;
+}
+
+.progress{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #ff9966, #ff5e62);
+  animation: animate 4s ease-in-out forwards;
+}
+
+@keyframes animate {
+  from{
+    width: 0;
+  }
+}
+
+@media(max-width: 600px){
+
+  .name{
+    font-size: 15px;
+  }
+
+  .value{
+    font-size: 15px;
+  }
+
+  .container h2{
+    font-size: 30px;
+    margin: 0 0 40px;
+  }
+
+
+}
+
+
+
+
+
+/******      Color Schemes           ******/
+
+.skills:nth-child(3) .progress{
+  background: linear-gradient(45deg, #24FE41, #38ef7d);
+}
+
+.skills:nth-child(3) .percent{
+  box-shadow: inset 0 0 10px #38ef7d;
+}
+
+.container .skills:nth-child(3){
+  border: 2px solid #24FE41;
+  filter: drop-shadow(0 0 12px rgba(56, 239, 125, 0.22));
+}
+
+
+.skills:nth-child(4) .progress{
+  background: linear-gradient(45deg, #FDC830, #EDDE5D);
+}
+
+.skills:nth-child(4) .percent{
+  box-shadow: inset 0 0 10px #FDC830;
+}
+
+.container .skills:nth-child(4){
+  border: 2px solid #FDC830;
+  filter: drop-shadow(0 0 12px rgba(253, 200, 48, 0.32));
+}
+
+.skills:nth-child(5) .progress{
+  background: linear-gradient(45deg, #C04848, #AA076B);
+}
+
+.skills:nth-child(5) .percent{
+  box-shadow: inset 0 0 10px #AA076B;
+}
+
+.container .skills:nth-child(5){
+  border: 2px solid #C04848;
+  filter: drop-shadow(0 0 12px rgba(72, 0, 72, 0.22));
+}
+
+.skills:nth-child(6) .progress{
+  background: linear-gradient(45deg, #fe8c00, #f83600);
+}
+
+.skills:nth-child(6) .percent{
+  box-shadow: inset 0 0 10px #fe8c00;
+}
+
+.container .skills:nth-child(6){
+  border: 2px solid #f83600;
+  filter: drop-shadow(0 0 12px rgba(248, 54, 0, 0.32));
+}
+
+.skills:nth-child(7) .progress{
+  background: linear-gradient(45deg, #348AC7,#12FFF7);
+}
+
+.skills:nth-child(7) .percent{
+  box-shadow: inset 0 0 10px #348AC7;
+}
+
+.container .skills:nth-child(7){
+  border: 2px solid #348AC7;
+  filter: drop-shadow(0 0 12px rgba(52, 138, 199, 0.32));
+}
+
+
+/************ Skills Section CSS End **********/
